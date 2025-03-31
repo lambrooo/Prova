@@ -21,7 +21,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // Basic route
 app.get('/', (req, res) => {
-    res.send('Welcome to Express.js API examples');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Route with parameters
